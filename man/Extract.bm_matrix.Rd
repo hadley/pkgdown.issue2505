@@ -15,7 +15,7 @@
 \method{[}{bm_pixmap}(x, i, j, ...) <- value
 }
 \arguments{
-\item{x}{\code{\link[=bm_bitmap]{bm_bitmap()}} object}
+\item{x}{Matrix object}
 
 \item{i, j}{indices specifying elements to extract or replace.
 See [base::\verb{[()}] for more information.}
@@ -27,12 +27,12 @@ See [base::\verb{[()}] for more information.}
 \item{value}{Replacement value}
 }
 \value{
-\verb{[.bm_matrix()} returns a \code{\link[=bm_bitmap]{bm_bitmap()}} or \code{\link[=bm_pixmap]{bm_pixmap()}} object if the
+\verb{[.bm_matrix()} returns a matrix
 value is a matrix and/or \code{drop} is \code{FALSE}
 otherwise it returns a vector of integers or color strings.
 }
 \description{
-\verb{[.bm_matrix()} is defined so that it returns a \code{\link[=bm_bitmap]{bm_bitmap()}} or \code{\link[=bm_pixmap]{bm_pixmap()}} object
+\verb{[.bm_matrix()} is defined so that it returns a matrix object
 (if the value is a matrix).
 \verb{[<-.bm_bitmap()} casts any replacement values as integers while
 \verb{[<-.bm_pixmap()} casts any replacement values as standardized color strings.
